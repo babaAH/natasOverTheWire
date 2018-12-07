@@ -13,10 +13,3 @@ for ch in ss:
        a = a+ch
 
 print(a)
-
-
-#resp = s.post(URL)# maybe unUsed
-
-
-
-#print(r.text)
