@@ -3,8 +3,8 @@ git init
 git config --global user.email "your@email"
 git config --global user.name "yourSureName"
 
-git commit -m "commit text"
-
 git add перечисли файлы через пробел
+
+git commit -m "commit text"
 
 git push -u origin master
