@@ -3,8 +3,11 @@ git init
 git config --global user.email "your@email"
 git config --global user.name "yourSureName"
 
-git commit -m "commit text"
+git remote add -f --tags natas https://github.com/<userName>/<projName>.git
+git clone https://github.com/<userName>/<projName>.git
 
 git add перечисли файлы через пробел
 
-git push -u origin master
+git commit -m "commit text"
+
+git push -u origin master # или просто git push кинет в ветку по умолчанию 
